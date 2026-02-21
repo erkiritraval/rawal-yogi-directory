@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Login</title>
+</head>
+<body>
+
+<h2>Admin Login</h2>
+
+<input type="password" id="adminPass" placeholder="Enter Password">
+<button onclick="checkLogin()">Login</button>
+
+<script>
+function checkLogin() {
+  const password = document.getElementById("adminPass").value;
+
+  if (password === "admin123") {
+    window.location.href = "admin-panel.html";
+  } else {
+    alert("Wrong Password ❌");
+  }
+}
+</script>
+
+</body>
+</html>
