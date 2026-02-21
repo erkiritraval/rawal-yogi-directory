@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>Admin Panel</header>
+
+<div class="container">
+  <input id="email" placeholder="Email"><br><br>
+  <input id="password" type="password" placeholder="Password"><br><br>
+  <button onclick="adminLogin()">Login</button>
+
+  <div id="pendingList"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/appwrite@13.0.0"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
